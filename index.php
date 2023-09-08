@@ -12,9 +12,6 @@
 <body>
   <!-- --------------------------- -->
   <!-- include il file fonctions.php per rendere disponibile la funzione generateStrongPassword -->
-  <?php
-  include("functions.php");
-  ?>
 
 <div class="container">
 
