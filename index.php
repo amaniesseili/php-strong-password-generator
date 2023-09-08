@@ -32,7 +32,10 @@
   <?php
 
       if(isset($_GET["passwordLength"])) {
-        $passwordLength = generateStrongPassword($passwordLength);
+        include ("functions.php");
+        $passwordLength =(int) $_GET["passwordLength"];
+        
+        $password=generateStrongPassword($passwordLength);
 
         echo '<p>Your Password :'. $password . '</p>';
   }
