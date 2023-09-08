@@ -10,6 +10,11 @@
   <title>Strong Passwords Generator </title>
 </head>
 <body>
+  <!-- --------------------------- -->
+  <!-- include il file fonctions.php per rendere disponibile la funzione generateStrongPassword -->
+  <?php
+  include("functions.php");
+  ?>
 
 <div class="container">
 
@@ -23,6 +28,16 @@
     
 
   </form>
+
+  <?php
+
+      if(isset($_GET["passwordLength"])) {
+        $passwordLength = generateStrongPassword($passwordLength);
+
+        echo '<p>Your Password :'. $password . '</p>';
+  }
+
+  ?>
 
 </div>
 

@@ -17,7 +17,7 @@
 
 <$php
 
-function generateStrongPassward ($length) {
+function generateStrongPassword ($length) {
   <!-- 1- definizione dei caratteri possibilinella pw  in una variabile-->
   $caracters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@$&%#()*^?'-+";
 
